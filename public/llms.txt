@@ -1,0 +1,4 @@
+# EON
+> EON is a web platform that analyses Python code, proposes measurable improvements, compares versions side by side and keeps a memory of approved and rejected experiments. Humans approve every change.
+Owner: Dev Prakash Sahu, devprakashsahu348@gmail.com
+Pages: /, /signup, /login, /contact, /privacy, /terms, /cookies, /payment-terms
