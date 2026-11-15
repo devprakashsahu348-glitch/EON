@@ -22,7 +22,7 @@ function Guide() {
       <div className="log">{log.map((m, i) => <div key={i} className="bubble" style={m.from === 'me' ? { background: 'var(--line)' } : {}}>{m.text}{m.src && <small>{m.src === 'ai' ? 'AI-generated suggestion. Verify before you rely on it.' : 'Built-in guidance'}</small>}</div>)}{busy && <span className="spin" />}</div>
       <form onSubmit={ask}><input value={q} onChange={e => setQ(e.target.value)} placeholder="Ask EON Guide" aria-label="Your question" /><button className="btn">Ask</button></form>
     </div>}
-    <button className="btn fab" onClick={() => setOpen(!open)} aria-expanded={open}>{open ? 'Close guide' : 'EON Guide'}</button>
+    <button className="btn fab" style={{ background: 'var(--moss)', color: 'var(--ink)', boxShadow: '0 4px 14px rgba(0,0,0,.28)' }} onClick={() => setOpen(!open)} aria-expanded={open}>{open ? 'Close' : 'Ask EON'}</button>
   </>
 }
 
